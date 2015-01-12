@@ -1,0 +1,16 @@
+ros-indigo-jackal-base (0.2.0-0saucy) saucy; urgency=high
+
+  * read mag msg in radian.
+  * added magnetometer calibration computation scripts.
+  * Contributors: Shokoofeh Pourmehr
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Mon, 12 Jan 2015 05:00:00 -0000
+
+ros-indigo-jackal-base (0.1.0-0saucy) saucy; urgency=high
+
+  * Initial release of basic functionality.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 11 Nov 2014 05:00:00 -0000
+
+
