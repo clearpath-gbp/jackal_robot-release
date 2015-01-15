@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>jackal_base</name>
-  <version>0.2.1</version>
+  <version>0.2.2</version>
   <description>Jackal's mobility and sensor base.</description>
 
   <maintainer email="mpurvis@clearpathrobotics.com">Mike Purvis</maintainer>
@@ -29,10 +29,13 @@
   <build_depend>topic_tools</build_depend>
 
   <run_depend>controller_manager</run_depend>
+  <run_depend>diagnostic_aggregator</run_depend>
   <run_depend>diagnostic_updater</run_depend>
   <run_depend>diff_drive_controller</run_depend>
   <run_depend>geometry_msgs</run_depend>
   <run_depend>imu_filter_madgwick</run_depend>
+  <run_depend>jackal_control</run_depend>
+  <run_depend>jackal_description</run_depend>
   <run_depend>jackal_msgs</run_depend>
   <run_depend>nmea_msgs</run_depend>
   <run_depend>nmea_navsat_driver</run_depend>
