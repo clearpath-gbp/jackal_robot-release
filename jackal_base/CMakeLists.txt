@@ -8,6 +8,8 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(Boost REQUIRED COMPONENTS thread)
 
 catkin_package()
+catkin_add_env_hooks(50.jackal_find_mag_config
+  SHELLS sh DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/env-hooks)
 
 include_directories(include ${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 
@@ -24,19 +26,11 @@ set_target_properties(${PROJECT_NAME}_simple_joy_node
   PROPERTIES OUTPUT_NAME simple_joy_node PREFIX "")
 add_dependencies(${PROJECT_NAME}_simple_joy_node jackal_msgs_gencpp)
 
-add_executable(${PROJECT_NAME}_sixpair src/sixpair.c)
-target_link_libraries(${PROJECT_NAME}_sixpair usb ${catkin_LIBRARIES})
-set_target_properties(${PROJECT_NAME}_sixpair
-  PROPERTIES OUTPUT_NAME sixpair PREFIX "")
-
-install(TARGETS jackal_node
-                ${PROJECT_NAME}_simple_joy_node
-                ${PROJECT_NAME}_sixpair
+install(TARGETS jackal_node ${PROJECT_NAME}_simple_joy_node
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
-install(DIRECTORY launch
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-) 
+install(DIRECTORY launch config
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
 install(PROGRAMS scripts/calibrate_compass scripts/compute_calibration
  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

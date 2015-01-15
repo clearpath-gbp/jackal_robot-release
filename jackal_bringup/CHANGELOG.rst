@@ -2,6 +2,11 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.2 (2015-01-14)
+------------------
+* Add default compass configuration and install it.
+* Contributors: Mike Purvis
+
 0.2.1 (2015-01-12)
 ------------------
 * Resolve catkin_lint.
