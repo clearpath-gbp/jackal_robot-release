@@ -25,19 +25,20 @@ import argparse
 import multicast
 import serial
 import sys
+import time
 
 
 def get_option_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--group",
                         help="multicast IP", metavar="IP", default="224.1.1.1")
-    parser.add_argument("--port",
+    parser.add_argument("--port", type=int,
                         help="multicast port", metavar="PORT", default=20001)
     parser.add_argument("--device",
                         help="multicast device", metavar="ETH", default="eth0")
     parser.add_argument("--serial-port",
                         help="serial port", metavar="SER", default=None)
-    parser.add_argument("--baud",
+    parser.add_argument("--baud", type=int,
                         help="serial baud rate", metavar="RATE", default=57600)
     parser.add_argument("--verbose", action="store_true",
                         help="echo received messages to stdout")
@@ -47,11 +48,23 @@ def get_option_parser():
 def main():
     args, _ = get_option_parser().parse_known_args()
 
-    receiver = multicast.MulticastUDPReceiver(args.device, args.group, args.port)
-    print "Created multicast receiver on %s:%s, device %s." % (args.group, args.port, args.device)
-    print "Will transmit to %s at %d baud." % (args.serial_port, args.baud)
+    # This loop is necessary for when the script starts with ROS on the local-filesystems
+    # event, it can run before the network devices are established.
+    while True:
+        try:
+            receiver = multicast.MulticastUDPReceiver(args.device, args.group, args.port)
+            print "Created multicast receiver on %s:%s, device %s." % (args.group, args.port, args.device)
+            break
+        except multicast.Receiver.InterfaceNotFound:
+            print "Unable to find network interface %s, retrying." % args.device
+            time.sleep(1.0)
 
     ser = None
+    if args.serial_port:
+        print "Will transmit to %s at %d baud." % (args.serial_port, args.baud)
+    else:
+        print "No serial port set, listening only."
+
     try:
         while True:
             s = receiver.read(10240)
