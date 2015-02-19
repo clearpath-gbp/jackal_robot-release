@@ -1,0 +1,53 @@
+ros-indigo-jackal-bringup (0.3.2-0trusty) trusty; urgency=high
+
+  * Retry on startup when network device does not exist.
+  * Set args types to int.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Thu, 19 Feb 2015 05:00:00 -0000
+
+ros-indigo-jackal-bringup (0.3.1-0trusty) trusty; urgency=high
+
+  * Add multicast lib, add navsat rtk relay.
+  * Add launch functionality of the Novatel GPS to accessories.launch
+  * Contributors: BryceVoort, Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 03 Feb 2015 05:00:00 -0000
+
+ros-indigo-jackal-bringup (0.3.0-0trusty) trusty; urgency=high
+
+  * Support changing topic name for accessory laser.
+  * Support turning on the LMS1xx accessory via optenv.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 20 Jan 2015 05:00:00 -0000
+
+ros-indigo-jackal-bringup (0.2.2-0trusty) trusty; urgency=high
+
+  * Add default compass configuration and install it.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Wed, 14 Jan 2015 05:00:00 -0000
+
+ros-indigo-jackal-bringup (0.2.1-0trusty) trusty; urgency=high
+
+  * Resolve catkin_lint.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Mon, 12 Jan 2015 05:00:00 -0000
+
+ros-indigo-jackal-bringup (0.2.0-0trusty) trusty; urgency=high
+
+  * Add install script.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Mon, 12 Jan 2015 05:00:00 -0000
+
+ros-indigo-jackal-bringup (0.1.0-0trusty) trusty; urgency=high
+
+  * Make jackal_bringup package just a stub for now.
+  * Contributors: Mike Purvis
+
+ -- Mike Purvis <mpurvis@clearpathrobotics.com>  Tue, 11 Nov 2014 05:00:00 -0000
+
+
