@@ -2,6 +2,12 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.2 (2015-02-19)
+------------------
+* Retry on startup when network device does not exist.
+* Set args types to int.
+* Contributors: Mike Purvis
+
 0.3.1 (2015-02-03)
 ------------------
 * Add multicast lib, add navsat rtk relay.
