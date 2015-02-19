@@ -2,6 +2,12 @@
 Changelog for package jackal_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.2 (2015-02-19)
+------------------
+* Add simple connection detect to enable Jackal's wifi status LED.
+* Get elapsed time from monotonic time source
+* Contributors: Mike Purvis, Paul Bovbel
+
 0.3.1 (2015-02-03)
 ------------------
 
