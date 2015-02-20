@@ -2,6 +2,9 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.3 (2015-02-20)
+------------------
+
 0.3.2 (2015-02-19)
 ------------------
 * Retry on startup when network device does not exist.
