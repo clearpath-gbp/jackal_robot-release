@@ -2,6 +2,12 @@
 Changelog for package jackal_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.3 (2015-02-20)
+------------------
+* Remove duration cast, was using incorrect method to get time out of clock
+* Return from function early when getifaddrs fails to avoid double free.
+* Contributors: Mike Purvis, Paul Bovbel
+
 0.3.2 (2015-02-19)
 ------------------
 * Add simple connection detect to enable Jackal's wifi status LED.
