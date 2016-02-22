@@ -2,6 +2,11 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.5 (2016-02-22)
+------------------
+* Fixed scan topic name and optenv for lms1xx bringup.
+* Contributors: Tony Baltovski
+
 0.3.4 (2016-02-10)
 ------------------
 * Added bumblebee2 to accessories.
