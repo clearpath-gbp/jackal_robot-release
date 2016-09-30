@@ -1,3 +1,29 @@
+## jackal_robot (indigo) - 0.3.6-0
+
+The packages in the `jackal_robot` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --ros-distro indigo jackal_robot` on `Fri, 30 Sep 2016 15:28:32 -0000`
+
+These packages were released:
+- `jackal_base`
+- `jackal_bringup`
+- `jackal_robot`
+
+Version of package(s) in repository `jackal_robot`:
+
+- upstream repository: https://github.com/jackal/jackal_robot.git
+- release repository: https://github.com/clearpath-gbp/jackal_robot-release.git
+- rosdistro version: `0.3.5-0`
+- old version: `0.3.5-0`
+- new version: `0.3.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## jackal_robot (indigo) - 0.3.5-0
 
 The packages in the `jackal_robot` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --ros-distro indigo jackal_robot` on `Mon, 22 Feb 2016 14:51:25 -0000`
