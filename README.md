@@ -1,3 +1,29 @@
+## jackal_robot (kinetic) - 0.3.6-0
+
+The packages in the `jackal_robot` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release jackal_robot -t kinetic -r kinetic --new-track` on `Wed, 09 May 2018 18:18:53 -0000`
+
+These packages were released:
+- `jackal_base`
+- `jackal_bringup`
+- `jackal_robot`
+
+Version of package(s) in repository `jackal_robot`:
+
+- upstream repository: https://github.com/jackal/jackal_robot.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.3.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.2`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## jackal_robot (indigo) - 0.3.6-0
 
 The packages in the `jackal_robot` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --ros-distro indigo jackal_robot` on `Fri, 30 Sep 2016 15:28:32 -0000`
