@@ -1,0 +1,12 @@
+Source: ros-kinetic-jackal-base
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-controller-manager, ros-kinetic-diagnostic-updater, ros-kinetic-geometry-msgs, ros-kinetic-hardware-interface, ros-kinetic-jackal-msgs, ros-kinetic-nmea-msgs, ros-kinetic-realtime-tools, ros-kinetic-roscpp, ros-kinetic-roslaunch, ros-kinetic-roslint, ros-kinetic-rosserial-server, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-teleop-twist-joy, ros-kinetic-topic-tools
+Homepage: http://wiki.ros.org/Robots/Jackal
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-jackal-base
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-scipy, ros-kinetic-controller-manager, ros-kinetic-diagnostic-aggregator, ros-kinetic-diagnostic-updater, ros-kinetic-diff-drive-controller, ros-kinetic-geometry-msgs, ros-kinetic-imu-filter-madgwick, ros-kinetic-jackal-control (>= 0.5), ros-kinetic-jackal-description (>= 0.5), ros-kinetic-jackal-msgs (>= 0.5), ros-kinetic-nmea-msgs, ros-kinetic-nmea-navsat-driver, ros-kinetic-realtime-tools, ros-kinetic-rosserial-python, ros-kinetic-rosserial-server, ros-kinetic-sensor-msgs, ros-kinetic-teleop-twist-joy, ros-kinetic-tf, ros-kinetic-topic-tools
+Description: Jackal's mobility and sensor base.
