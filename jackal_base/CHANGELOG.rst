@@ -2,6 +2,11 @@
 Changelog for package jackal_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.7 (2018-08-02)
+------------------
+* Updated the wireless interface for kinetic
+* Contributors: Dave Niewinski
+
 0.3.6 (2016-09-30)
 ------------------
 * Minor linter fixes to jackal_diagnostic_updater.
