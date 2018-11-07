@@ -1,0 +1,12 @@
+Source: ros-kinetic-jackal-bringup
+Section: misc
+Priority: extra
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://wiki.ros.org/Robots/Jackal
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-jackal-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-jackal-base (>= 0.3), ros-kinetic-lms1xx, ros-kinetic-nmea-comms, ros-kinetic-nmea-navsat-driver, ros-kinetic-pointgrey-camera-driver, ros-kinetic-robot-upstart (>= 0.1.1)
+Description: Scripts for installing Jackal's robot software.
