@@ -33,6 +33,7 @@
       gain: 0.1
       zeta: 0.001
       publish_tf: false
+      use_magnetic_field_msg: false
     </rosparam>
   </node>
 
