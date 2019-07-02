@@ -2,17 +2,11 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.3.9 (2019-06-19)
+0.4.0 (2019-07-02)
 ------------------
 * Temporarily removed point grey driver dependency
-* Contributors: Dave Niewinski
-
-0.3.8 (2018-11-07)
-------------------
-
-0.3.7 (2018-08-02)
-------------------
-* Updated default IPs for Kinetic
+* Merge pull request `#10 <https://github.com/jackal/jackal_robot/issues/10>`_ from jackal/stereo-cameras
+  Added stereo cameras accessory.
 * Added stereo cameras accessory.
 * Contributors: Dave Niewinski, Tony Baltovski
 
