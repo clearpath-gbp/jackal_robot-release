@@ -2,8 +2,10 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.6.0 (2020-04-20)
+0.5.1 (2020-04-14)
 ------------------
+* Merge pull request `#18 <https://github.com/jackal/jackal_robot/issues/18>`_ from jackal/melodic-testing-fixes
+  Small fixes revealed in testing on live hardware
 * Fix the IP address for the urg_node used by the hokuyo lidar
 * Add the additional udev rule for the PS4 controller
 * [jackal_bringup] Re-added pointgrey_camera_driver as run depend.
