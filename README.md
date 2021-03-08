@@ -1,3 +1,29 @@
+## jackal_robot (melodic) - 0.6.1-1
+
+The packages in the `jackal_robot` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic jackal_robot` on `Mon, 08 Mar 2021 18:33:28 -0000`
+
+These packages were released:
+- `jackal_base`
+- `jackal_bringup`
+- `jackal_robot`
+
+Version of package(s) in repository `jackal_robot`:
+
+- upstream repository: https://github.com/jackal/jackal_robot.git
+- release repository: https://github.com/clearpath-gbp/jackal_robot-release.git
+- rosdistro version: `0.6.0-1`
+- old version: `0.6.0-1`
+- new version: `0.6.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.1`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## jackal_robot (kinetic) - 0.5.1-1
 
 The packages in the `jackal_robot` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic jackal_robot` on `Mon, 20 Apr 2020 21:33:55 -0000`
