@@ -2,6 +2,13 @@
 Changelog for package jackal_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.0 (2021-04-23)
+------------------
+* Merge development changes from live hardware test into noetic-devel
+* Sort the jackal_base changelog version tags
+* Fix the scipy dependency so it resolves properly. Minor code cleanup
+* Contributors: Chris I-B, Chris Iverach-Brereton
+
 0.6.1 (2021-03-08)
 ------------------
 * Use eval to find the mag config. This should fix a bug when jackal is installed to ros.d
@@ -25,6 +32,17 @@ Changelog for package jackal_base
   * add comment about unused member variable
 * add calibrate_compass.bat (`#3 <https://github.com/jackal/jackal_robot/issues/3>`_)
 * add env-hook (`#2 <https://github.com/jackal/jackal_robot/issues/2>`_)
+* quickly get around the build break.
+* Contributors: James Xu, Lou Amadio, Sean Yen, Tony Baltovski, seanyen
+
+0.5.1 (2020-04-14)
+------------------
+* [jackal_base] Stopped using Vector3 messages for on-board IMU.
+* Merge pull request `#17 <https://github.com/jackal/jackal_robot/issues/17>`_ from ms-iot/init_windows
+  Support Jackal ROS packages on Windows
+* Merge branch 'init_windows' of https://github.com/ms-iot/jackal_robot into init_windows
+* Merge pull request `#1 <https://github.com/jackal/jackal_robot/issues/1>`_ from seanyen/init_windows
+  Remove to-be-ported code path to unblock the Windows build.
 * quickly get around the build break.
 * Contributors: James Xu, Lou Amadio, Sean Yen, Tony Baltovski, seanyen
 
