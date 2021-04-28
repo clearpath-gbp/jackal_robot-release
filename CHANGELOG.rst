@@ -2,6 +2,12 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.2 (2021-04-28)
+------------------
+* Fix the name of the VLP16 launch file that gets included in accessories
+* Fix a c&p error where and arg was referenced before it was actually assigned
+* Contributors: Chris Iverach-Brereton
+
 0.6.1 (2021-03-08)
 ------------------
 * Add VLP16 support, refactor main/secondary laser envar support (`#27 <https://github.com/jackal/jackal_robot/issues/27>`_)
