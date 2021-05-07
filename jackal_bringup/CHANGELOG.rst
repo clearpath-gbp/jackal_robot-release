@@ -2,11 +2,15 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.6.2 (2021-04-28)
+0.7.0 (2021-04-23)
 ------------------
+* Merge development changes from live hardware test into noetic-devel
 * Fix the name of the VLP16 launch file that gets included in accessories
 * Fix a c&p error where and arg was referenced before it was actually assigned
-* Contributors: Chris Iverach-Brereton
+* Merge pull request `#24 <https://github.com/jackal/jackal_robot/issues/24>`_ from ScottMcCormack/noetic-devel
+  Fixed typo with OSError exception handling
+* Apply python 3 fixes.  Note: the lambda function in network.py is auto-generated, and the original is in a comment in case there are problems down the road.
+* Contributors: Chris I-B, Chris Iverach-Brereton, Scott McCormack
 
 0.6.1 (2021-03-08)
 ------------------
@@ -22,6 +26,18 @@ Changelog for package jackal_bringup
 
 0.6.0 (2020-04-20)
 ------------------
+* Fix the IP address for the urg_node used by the hokuyo lidar
+* Add the additional udev rule for the PS4 controller
+* [jackal_bringup] Re-added pointgrey_camera_driver as run depend.
+* Add udev rules for the PS4, logitech, and USB to serial adapter (copied from Husky)
+* Add the urg_node to the dependencies
+* Create the urg_node needed for the hokuyo sensor
+* Contributors: Chris I-B, Chris Iverach-Brereton, Tony Baltovski
+
+0.5.1 (2020-04-14)
+------------------
+* Merge pull request `#18 <https://github.com/jackal/jackal_robot/issues/18>`_ from jackal/melodic-testing-fixes
+  Small fixes revealed in testing on live hardware
 * Fix the IP address for the urg_node used by the hokuyo lidar
 * Add the additional udev rule for the PS4 controller
 * [jackal_bringup] Re-added pointgrey_camera_driver as run depend.
