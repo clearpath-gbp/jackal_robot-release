@@ -2,6 +2,9 @@
 Changelog for package jackal_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.1 (2022-01-18)
+------------------
+
 0.7.0 (2021-04-23)
 ------------------
 * Merge development changes from live hardware test into noetic-devel
