@@ -93,7 +93,7 @@ tracks:
     name: upstream
     patches: null
     release_inc: '2'
-    release_repo_url: git@github.com:clearpath-gbp/jackal_robot-release.git
+    release_repo_url: https://github.com/clearpath-gbp/jackal_robot-release.git
     release_tag: :{version}
     ros_distro: noetic
     vcs_type: git
