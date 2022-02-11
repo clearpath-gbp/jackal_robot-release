@@ -1,0 +1,12 @@
+Source: ros-melodic-jackal-bringup
+Section: misc
+Priority: optional
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://wiki.ros.org/Robots/Jackal
+Standards-Version: 3.9.2
+
+Package: ros-melodic-jackal-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-jackal-base (>= 0.3), ros-melodic-lms1xx, ros-melodic-nmea-comms, ros-melodic-nmea-navsat-driver, ros-melodic-pointgrey-camera-driver, ros-melodic-robot-upstart (>= 0.1.1), ros-melodic-ros-mscl, ros-melodic-urg-node, ros-melodic-velodyne-pointcloud
+Description: Scripts for installing Jackal's robot software.
