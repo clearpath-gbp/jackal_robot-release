@@ -31,10 +31,6 @@
  *
  */
 
-#include <ros/ros.h>
-#include <controller_manager/controller_manager.h>
-#include <rosserial_server/serial_session.h>
-
 #include <string>
 
 #if defined(_WIN32)
@@ -50,6 +46,10 @@
 // #if defined(_WIN32) && defined(ERROR)
 // #undef ERROR
 // #endif
+
+#include <controller_manager/controller_manager.h>
+#include <ros/ros.h>
+#include <rosserial_server/serial_session.h>
 
 #include "jackal_base/jackal_diagnostic_updater.h"
 #include "jackal_base/jackal_hardware.h"
