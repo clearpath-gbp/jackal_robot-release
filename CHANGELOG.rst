@@ -2,6 +2,9 @@
 Changelog for package jackal_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.3 (2022-03-08)
+------------------
+
 0.7.2 (2022-02-15)
 ------------------
 * Add diagnostic analyzers for EKF localization and twist mux
