@@ -2,26 +2,38 @@
 Changelog for package jackal_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.7.2 (2022-02-15)
+0.6.2 (2021-04-28)
 ------------------
-* Updated Microstrain environment variables
-* Added GX5 to jackal bringup
-* Contributors: Luis Camero
-
-0.7.1 (2022-01-18)
-------------------
-* Removed duplicate Hokuyo fender node launch
-* Contributors: luis-camero
-
-0.7.0 (2021-04-23)
-------------------
-* Merge development changes from live hardware test into noetic-devel
 * Fix the name of the VLP16 launch file that gets included in accessories
 * Fix a c&p error where and arg was referenced before it was actually assigned
-* Merge pull request `#24 <https://github.com/jackal/jackal_robot/issues/24>`_ from ScottMcCormack/noetic-devel
-  Fixed typo with OSError exception handling
-* Apply python 3 fixes.  Note: the lambda function in network.py is auto-generated, and the original is in a comment in case there are problems down the road.
-* Contributors: Chris I-B, Chris Iverach-Brereton, Scott McCormack
+* Contributors: Chris Iverach-Brereton
+
+0.6.5 (2022-03-08)
+------------------
+* Updated Microstrain launch to include new variables (`#47 <https://github.com/jackal/jackal_robot/issues/47>`_)
+* [jackal_bringup] Removed unnecessary udev rule.
+* Contributors: Tony Baltovski, luis-camero
+
+0.6.4 (2022-01-18)
+------------------
+
+0.6.3 (2021-09-29)
+------------------
+* Merge pull request `#37 <https://github.com/jackal/jackal_robot/issues/37>`_ from luis-camero/melodic-devel
+  Added Velodyne HDL-32E driver launch file to the accessories launch
+* Added Velodyne HDL-32E driver launch file to the accessories launch file under environment variable JACKAL_LASER_3D_MODEL=hdl32e
+* Add envar support for adding a GX5 family IMU (`#34 <https://github.com/jackal/jackal_robot/issues/34>`_)
+  * Launch the GX5 IMU node if necessary
+  * Change the name of the frame id arg for the IMU to match with the latest ros_mscl
+  * Use the ENU frame instead of NED for the GX5
+* Merge pull request `#32 <https://github.com/jackal/jackal_robot/issues/32>`_ from jackal/rsci-227
+  Set fender lidar angle range
+* Set the max/min angles for the fender lidars to [-pi, pi] to prevent the sensors from seeing the wheels/chassis.  If the robot sees its own wheels it can cause problems with ARK, which is the main use-case for the fender lasers.
+* 0.6.2
+* Update the changelogs ahead of release
+* Fix the name of the VLP16 launch file that gets included in accessories
+* Fix a c&p error where and arg was referenced before it was actually assigned
+* Contributors: Chris I-B, Chris Iverach-Brereton, Luis Camero, Tony Baltovski
 
 0.6.1 (2021-03-08)
 ------------------
@@ -37,18 +49,6 @@ Changelog for package jackal_bringup
 
 0.6.0 (2020-04-20)
 ------------------
-* Fix the IP address for the urg_node used by the hokuyo lidar
-* Add the additional udev rule for the PS4 controller
-* [jackal_bringup] Re-added pointgrey_camera_driver as run depend.
-* Add udev rules for the PS4, logitech, and USB to serial adapter (copied from Husky)
-* Add the urg_node to the dependencies
-* Create the urg_node needed for the hokuyo sensor
-* Contributors: Chris I-B, Chris Iverach-Brereton, Tony Baltovski
-
-0.5.1 (2020-04-14)
-------------------
-* Merge pull request `#18 <https://github.com/jackal/jackal_robot/issues/18>`_ from jackal/melodic-testing-fixes
-  Small fixes revealed in testing on live hardware
 * Fix the IP address for the urg_node used by the hokuyo lidar
 * Add the additional udev rule for the PS4 controller
 * [jackal_bringup] Re-added pointgrey_camera_driver as run depend.

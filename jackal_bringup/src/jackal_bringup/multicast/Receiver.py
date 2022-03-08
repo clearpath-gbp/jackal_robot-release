@@ -1,33 +1,32 @@
-#!/bin/env python3
+#!/bin/env python
 
 import socket
 import struct
 import fcntl
 import array
 
-from . import network
-import collections
+import network
 
 class InterfaceNotFound(Exception):
     def __init__(self, ifname):
         Exception.__init__(self, ifname)
 
 class Datagram:
-    """A datagram socket wrapper.
+    """A datagram socket wrapper.    
     """
     iflist = None
 
     def __init__(self, address, port):
-
+        
         if address is not None and len(address) > 0:
             try:
                 socket.inet_aton ( address )
-            except socket.error:
-                try:
+            except socket.error:           
+                try: 
                     ifconfig = network.ifconfig()
                 except network.IfConfigNotSupported:
                     raise InterfaceNotFound(address)
-
+                
                 if address in ifconfig:
                     iff = ifconfig[address]
                 else:
@@ -42,34 +41,34 @@ class Datagram:
 
         self._socket = socket.socket (socket.AF_INET, socket.SOCK_DGRAM)
         self._socket.setsockopt (socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
+        
         self.address = address
         self.port = port
         self.multicast = False
 
         self.bind()
 
-    def bind(self):
+    def bind(self):        
         self._socket.bind ( (self.local_address, self.port) )
 
     def pipe(self, ostream):
         while True:
             self.pipeone (ostream)
 
-    def pipeone(self, ostream, size=1500):
+    def pipeone(self, ostream, size=1500):                
         data, addr = self._socket.recvfrom(size)
-
+        
         if ostream is not None:
-            if isinstance(ostream, collections.Callable): target = ostream
+            if callable(ostream): target = ostream
             else: target = ostream.write
             return target (data)
         else:
             return data
-
+    
     def read(self, size=1500):
         return self.pipeone (None, size)
     recv = read
-
+                    
     def cleanup(self):
         pass
 
@@ -81,7 +80,7 @@ class Datagram:
         return "DatagramReceiver [{0}] {1}:{2}".format (self._socket, self.local_address, self.port)
 
 class Multicast(Datagram):
-    def __init__(self, bind_address_or_interface, multicast_address, port, ttl=32, loop=1):
+    def __init__(self, bind_address_or_interface, multicast_address, port, ttl=32, loop=1):        
         Datagram.__init__ (self, bind_address_or_interface, port )
 
         self.ttl = ttl
@@ -107,10 +106,13 @@ class Multicast(Datagram):
 
 def DatagramReceiver (destination_address, destination_port, source_interface=None, ttl=32):
     multicast = ord(socket.inet_aton(destination_address)[0]) in range(224, 240)
-
+    
     if multicast:
         receiver = Multicast (source_interface, destination_address, destination_port, ttl=ttl)
     else:
         receiver = Datagram (destination_address, destination_port)
 
     return receiver
+
+
+    

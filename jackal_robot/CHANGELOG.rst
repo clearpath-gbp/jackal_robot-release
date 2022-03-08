@@ -2,24 +2,25 @@
 Changelog for package jackal_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.7.2 (2022-02-15)
+0.6.2 (2021-04-28)
 ------------------
 
-0.7.1 (2022-01-18)
+0.6.5 (2022-03-08)
 ------------------
 
-0.7.0 (2021-04-23)
+0.6.4 (2022-01-18)
 ------------------
-* Merge development changes from live hardware test into noetic-devel
-* Contributors: Chris I-B, Chris Iverach-Brereton
+
+0.6.3 (2021-09-29)
+------------------
+* 0.6.2
+* Update the changelogs ahead of release
+* Contributors: Chris Iverach-Brereton
 
 0.6.1 (2021-03-08)
 ------------------
 
 0.6.0 (2020-04-20)
-------------------
-
-0.5.1 (2020-04-14)
 ------------------
 
 0.3.9 (2019-06-19)
