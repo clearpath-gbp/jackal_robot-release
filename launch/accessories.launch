@@ -202,6 +202,16 @@ in the URDF. See jackal_description/urdf/accessories.urdf.xacro.
 
   </group>
 
+  <!-- Optional Camera: Flir Blackfly S -->
+  <group if="$(optenv JACKAL_BLACKFLY 0)">
+    <include file="$(find spinnaker_camera_driver)/launch/camera.launch">
+      <arg name="camera_name"   value="$(optenv JACKAL_BLACKFLY_PREFIX front_camera)"/>
+      <arg name="camera_serial" value="$(optenv JACKAL_BLACKFLY_SERIAL 0)"/>
+      <arg name="device_type"   value="$(optenv JACKAL_BLACKFLY_DEVICE USB)"/> <!-- USB3 or GigE -->
+      <arg name="encoding"      value="$(optenv JACKAL_BLACKFLY_ENCODING BayerRGB)"/>
+      <arg name="frame_rate"    value="$(optenv JACKAL_BLACKFLY_FRAMERATE 30)"/>
+    </include>
+  </group>
 
   <!-- Optional upgraded GPS receiver. -->
   <group ns="navsat/upgrade" if="$(optenv JACKAL_NAVSAT 0)">
@@ -226,11 +236,15 @@ in the URDF. See jackal_description/urdf/accessories.urdf.xacro.
 
   <!-- Optional Microstrain IMU: GX3, GX5, GX25, etc. -->
   <group if="$(optenv JACKAL_IMU_MICROSTRAIN 0)">
-    <include file="$(find ros_mscl)/launch/microstrain.launch">
-      <arg name="name"          value="$(optenv JACKAL_IMU_MICROSTRAIN_NAME microstrain)" />
-      <arg name="imu_frame_id"  value="$(optenv JACKAL_IMU_MICROSTRAIN_LINK microstrain_link)" />
-      <arg name="port"          value="$(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain)" />
-      <arg name="use_enu_frame" value="true" />
+    <include file="$(find microstrain_inertial_driver)/launch/microstrain.launch">
+      <arg name="namespace"              value="$(optenv JACKAL_IMU_MICROSTRAIN_NAME microstrain)" />
+      <arg name="node_name"              value="microstrain_inertial_driver" />
+      <arg name="params_file"            value="" />
+      <arg name="port"                   value="$(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain)" />
+      <arg name="aux_port"               value="$(optenv JACKAL_IMU_MICROSTRAIN_PORT /dev/microstrain)" />
+      <arg name="baudrate"               value="$(optenv JACKAL_IMU_MICROSTRAIN_BAUDRATE 115200)" />
+      <arg name="imu_frame_id"           value="$(optenv JACKAL_IMU_MICROSTRAIN_LINK microstrain_link)" />
+      <arg name="use_enu_frame"          value="true" />
     </include>
   </group>
 </launch>
