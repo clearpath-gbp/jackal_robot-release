@@ -2,6 +2,9 @@
 Changelog for package jackal_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.6 (2022-11-29)
+------------------
+
 0.7.5 (2022-11-17)
 ------------------
 * Add dependency for jackal_tests (`#54 <https://github.com/jackal/jackal_robot/issues/54>`_)
