@@ -2,6 +2,13 @@
 Changelog for package jackal_robot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2023-02-02)
+------------------
+* Added ExecuteProcess action to set the domain ID at launch
+* Added robot_upstart dependency
+* Added dependencies.repos file
+* Contributors: Roni Kreinin
+
 1.0.0 (2022-10-16)
 ------------------
 * Fixed copyright
