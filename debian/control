@@ -1,0 +1,12 @@
+Source: ros-noetic-jackal-bringup
+Section: misc
+Priority: optional
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://wiki.ros.org/Robots/Jackal
+Standards-Version: 3.9.2
+
+Package: ros-noetic-jackal-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-microstrain-inertial-driver, ros-foxy-robot-upstart (>= 0.1.1), ros-foxy-urg-node, ros-foxy-velodyne-pointcloud, ros-noetic-jackal-base (>= 0.3), ros-noetic-lms1xx, ros-noetic-nmea-comms, ros-noetic-nmea-navsat-driver, ros-noetic-pointgrey-camera-driver, ros-noetic-sick-tim, ros-noetic-spinnaker-camera-driver
+Description: Scripts for installing Jackal's robot software.
