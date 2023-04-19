@@ -1,0 +1,12 @@
+Source: ros-noetic-jackal-robot
+Section: misc
+Priority: optional
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://wiki.ros.org/Robots/Jackal
+Standards-Version: 3.9.2
+
+Package: ros-noetic-jackal-robot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-jackal-bringup (>= 0.3), ros-noetic-jackal-firmware, ros-noetic-jackal-tests
+Description: Metapackage of software to install on Jackal.
