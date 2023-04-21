@@ -1,3 +1,29 @@
+## jackal_robot (noetic) - 0.7.9-1
+
+The packages in the `jackal_robot` repository were released into the `noetic` distro by running `/usr/bin/bloom-release jackal_robot -r noetic -t noetic` on `Fri, 21 Apr 2023 16:51:54 -0000`
+
+These packages were released:
+- `jackal_base`
+- `jackal_bringup`
+- `jackal_robot`
+
+Version of package(s) in repository `jackal_robot`:
+
+- upstream repository: https://github.com/jackal/jackal_robot.git
+- release repository: https://github.com/clearpath-gbp/jackal_robot-release.git
+- rosdistro version: `0.7.8-1`
+- old version: `0.7.8-1`
+- new version: `0.7.9-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## jackal_robot (noetic) - 0.7.8-1
 
 The packages in the `jackal_robot` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic jackal_robot` on `Wed, 19 Apr 2023 14:11:28 -0000`
